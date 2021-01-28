@@ -1,72 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=0.7">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: Arial;
-  color: white;
+img.one{
+height: 35%;
+width: 35%;
+}
+* {
+  box-sizing: border-box;
 }
 
-.split {
-  height: 100%;
-  width: 30%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 800px; 
 }
 
-.left {
-  width: 30%;
-  left: 0;
-  background-color: green;
-}
-
-.right {
-  width: 70%;
-  right: 0;
-  background-color: grey;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.centered1 {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-80%, -20%);
-}
-
-.centered img {
-  width: 150px;
-  border-radius: 50%;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
 </head>
 <body>
+<div class="row">
+  <div class="column" style="background-color:green;">
+    <center><h1>Amisha Seth's PORTFOLIO<h5>(using Html & Css)</h5></h1></center>
 
-<div class="split left">
-  <div class="centered">
-    
-    <img src="87-512.webp" alt="Avatar woman">
-    <h1><center>MY PORTFOLIO</center></h1>
-    <h2>Amisha Seth</h2>
-    <p>My objective is to gain knowledge about technical skills in cloud computing and learn from experience. This will allow me to utilize my degree and pursue my passion to provide good service to the company.</p>
+    <center><img class="one" src="87-512.webp" alt="Avatar woman"></center>
+
+    <h2>My objective is to gain knowledge about technical skills in cloud computing and learn from experience. This will allow me to utilize my degree and pursue my passion to provide good service to the company.</h2>
   </div>
-</div>
 
-<div class="split right">
- 
-  <div class="centered1">
-    <h2>SKILLS</h2>
+
+  <div class="column" style="background-color:grey;">
+    <p><h2>SKILLS</h2>
     <p>
 •	C<br>
 •	C++<br>
@@ -79,7 +52,7 @@ body {
    </p>
 
    <h2>LANGUAGES KNOWN</h2>
-   <p">
+   <p>
 •	ENGLISH<br>
 •	HINDI<br>
 •	FRENCH (ELEMENTARY)<br>
@@ -100,11 +73,10 @@ Paper accepted at Indian journal of science and technology (7th July)<br><br>
 
 Research paper- BIG DATA IN HEALTHCARE: IN COVID-19 
 Paper accepted at International conference on Mechatronics and Artificial Intelligence (21st January)<br><br>	
-     <b><a href="name.html"><h1> For Education click here (bootstrap)</h1></a></b>
+ <b><a href="name.html"><h1> For Education click here (bootstrap)</h1></a></b>
 </p>
-
   </div>
 </div>
-     
+
 </body>
-</html> 
+</html>
