@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 img.one{
-height: 35%;
-width: 35%;
+height: 38%;
+width: 45%;
 }
 * {
   box-sizing: border-box;
 }
 
-/* Create two equal columns that floats next to each other */
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 33.33%;
   padding: 10px;
-  height: 800px; 
+  height: 500px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -25,21 +28,24 @@ width: 35%;
   display: table;
   clear: both;
 }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 </style>
 </head>
-<body>
+<body bgcolor="black">
 <div class="row">
   <div class="column" style="background-color:green;">
-    <center><h1>Amisha Seth's PORTFOLIO<h5>(using Html & Css)</h5></h1></center>
-
-    <center><img class="one" src="87-512.webp" alt="Avatar woman"></center>
-
-    <h2>My objective is to gain knowledge about technical skills in cloud computing and learn from experience. This will allow me to utilize my degree and pursue my passion to provide good service to the company.</h2>
+    <center><h1>Amisha Seth's PORTFOLIO<h5>(using Html & Css)</h5></h1>
+    <img class="one" src="87-512.webp" alt="Avatar woman">
+    <h4>My objective is to gain knowledge about technical skills in cloud computing and learn from experience. This will allow me to utilize my degree and pursue my passion to provide good service to the company</h4>
   </div>
-
-
   <div class="column" style="background-color:grey;">
-    <p><h2>SKILLS</h2>
+    <h2>SKILLS</h2>
     <p>
 •	C<br>
 •	C++<br>
@@ -56,12 +62,11 @@ width: 35%;
 •	ENGLISH<br>
 •	HINDI<br>
 •	FRENCH (ELEMENTARY)<br>
-  </p>
-
-
-   <h2>INTERNSHIPS/PROJECTS/RESEARCH PAPER</h2>
-   <p>    
-Mentor IF – HTML, CSS, BOOTSTRAP
+  </p></p>
+  </div>
+  <div class="column" style="background-color:green;">
+    <h2>INTERNSHIPS/PROJECTS/RESEARCH PAPER</h2>
+    <p>Mentor IF – HTML, CSS, BOOTSTRAP
 December 26th, 2020 to January 17th, 2020
 Creating portfolio using languages HTML, CSS, BOOTSTRAP<br><br>
                    
@@ -73,8 +78,7 @@ Paper accepted at Indian journal of science and technology (7th July)<br><br>
 
 Research paper- BIG DATA IN HEALTHCARE: IN COVID-19 
 Paper accepted at International conference on Mechatronics and Artificial Intelligence (21st January)<br><br>	
- <b><a href="name.html"><h1> For Education click here (bootstrap)</h1></a></b>
-</p>
+ <b><a href="name.html"><h1> For Education click here (bootstrap)</h1></a></b></p>
   </div>
 </div>
 
